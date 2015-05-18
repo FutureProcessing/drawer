@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="bin\www" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="bin/example.js" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="DEBUG" value="drawer:*" />
+    </envs>
+    <browser url="http://localhost:3000/" />
+    <profiling log-folder="." record-internal="true">
+      <option name="gnuplotExecutable" value="" />
+      <option name="tickPackage" value="" />
+      <option name="v8ProfilerPackage" value="" />
+    </profiling>
+    <method />
+  </configuration>
+</component>
