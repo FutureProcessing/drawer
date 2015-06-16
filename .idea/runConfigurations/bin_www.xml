@@ -4,11 +4,6 @@
       <env name="DEBUG" value="drawer:*" />
     </envs>
     <browser url="http://localhost:3000/" />
-    <profiling log-folder="." record-internal="true">
-      <option name="gnuplotExecutable" value="" />
-      <option name="tickPackage" value="" />
-      <option name="v8ProfilerPackage" value="" />
-    </profiling>
     <method />
   </configuration>
 </component>

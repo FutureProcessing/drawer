@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row people">
+    <div class="col-lg-12">
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6"
+          ng-repeat="person in persons | filter: {participate: true}">
+        <li><a href="#">{{person.name}} {{person.surname}}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="draw-once">
+        <checkbox ng-model="config.drawOnce" ng-change="drawOnceChanged()"></checkbox>
+        <div class="exclude">{{'DRAWING.DRAW_ONCE' | translate}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4">
+      <button type="button" class="btn btn-danger btn-lg" ng-click="drawClicked()" ng-disabled="empty">{{'DRAWING.DRAW'
+        | translate}}
+      </button>
+      <p class="bg-danger person" ng-show="drawn">{{person.name}} {{person.surname}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>{{'MAIN.HEADER' | translate}}</h1>
+    <img src="assets/images/cube.png">
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <tabs data="tabData" type="pills"></tabs>
+    </div>
+  </div>
+
+  <div class="row">
+    <ui-view></ui-view>
+  </div>
+</div>
+
+<footer class="footer" translate="MAIN.FOOTER">
+</footer>
