@@ -63,13 +63,15 @@ angular.module('drawerApp')
     $scope.drawOnceChanged = function () {
       ConfigService.updateConfig($scope.config);
       if (!$scope.config.drawOnce) {
-        var persons = angular.copy($scope.persons);
-        $scope.persons = [];
-        for (var i = 0; i < persons.length; i++) {
-          var person = persons[i];
-          person.participate = true;
-          PersonService.updatePerson(person).success(updatePerson(person));
-        }
+        PersonService.getPersons().then(function(response) {
+          var persons = response.data;
+          $scope.persons = [];
+          for (var i = 0; i < persons.length; i++) {
+            var person = persons[i];
+            person.participate = true;
+            PersonService.updatePerson(person).then(updatePerson(person));
+          }
+        });
       }
     };
   });

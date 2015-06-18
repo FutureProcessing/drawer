@@ -27,7 +27,7 @@ module.exports = function(config) {
       'client/bower_components/angular-translate/angular-translate.js',
       'client/bower_components/angularjs-toaster/toaster.js',
       'client/bower_components/angular-bootstrap-checkbox/angular-bootstrap-checkbox.js',
-      'client/bower_components/moment/moment.js',
+      'client/bower_components/momentjs/moment.js',
       'client/bower_components/angular-ui-router-tabs/src/ui-router-tabs.js',
       'client/app/app.js',
       'client/app/app.coffee',

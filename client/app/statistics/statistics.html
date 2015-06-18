@@ -4,7 +4,7 @@
 
   <div class="row people">
     <div class="col-lg-12">
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="person in persons">
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="person in persons | orderBy:'surname'">
         <li ng-click="personSelected(person)"><a href="#">{{person.name}} {{person.surname}} {{person.draws.length}}</a>
         </li>
       </ul>
